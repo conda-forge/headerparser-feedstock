@@ -1,13 +1,13 @@
 {% set name = "headerparser" %}
-{% set version = "0.5.1" %}
+{% set version = "0.5.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/headerparser-{{ version }}.tar.gz
-  sha256: f4ca75b801b4d810cde2a278f5f07c9733e4d88e51085032fd909f5655df3ef3
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/headerparser-{{ version }}.tar.gz
+  sha256: 2e24ae218ed5d2ef5839fafeff084c40ee1e317bbbe6489cfe333385d7cb98e7
 
 build:
   noarch: python
