@@ -17,9 +17,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - hatchling
+    - python {{ python_min }}
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - attrs >=20.1.0
     - deprecated >=1.2
 
@@ -29,10 +30,11 @@ test:
   commands:
     - pip check
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
-  home: https://github.com/jwodder/headerparser
+  home: https://github.com/wheelodex/headerparser
   summary: argparse for mail-style headers
   license: MIT
   license_file: LICENSE
