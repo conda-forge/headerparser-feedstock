@@ -31,13 +31,8 @@ tests:
   - python:
       imports:
         - headerparser
-      python_version: ${{ python_min }}.*
-  - requirements:
-      run:
-        - python ${{ python_min }}.*
-        - pip
-    script:
-      - pip check
+      python_version: ["${{ python_min }}.*", "3.*"]
+      pip_check: true
 
 about:
   summary: argparse for mail-style headers
